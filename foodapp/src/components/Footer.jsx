@@ -14,9 +14,6 @@ const Footer = () => (
       <div className="flex gap-8 text-xl font-semibold">
         <Link to="/" className="hover:text-orange-500 transition">Home</Link>
         <Link to="/menu" className="hover:text-orange-500 transition">Menu</Link>
-        <Link to="/offer" className="hover:text-orange-500 transition">Offers</Link>
-        <Link to="/service" className="hover:text-orange-500 transition">Services</Link>
-        <Link to="/about" className="hover:text-orange-500 transition">About</Link>
         <Link to="/contact" className="hover:text-orange-500 transition">Contact</Link>
       </div>
       {/* Social Icons */}

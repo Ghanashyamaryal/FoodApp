@@ -14,18 +14,26 @@ const HeroImage = ({ query, setQuery, onSearch }) => (
         <span>Kathmandu</span>
       </div>
       <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900">Discover restaurants<br />that deliver near you.</h1>
-      <form className="flex items-center bg-white rounded-full shadow w-full max-w-xl" onSubmit={onSearch}>
+      <form
+        onSubmit={onSearch}
+        className="flex flex-col md:flex-row gap-1 md:gap-0 w-full bg-white max-w-xl shadow rounded-2xl md:rounded-full overflow-hidden"
+      >
         <input
           type="text"
           placeholder="Search for food (e.g. Pizza, Burger)"
-          className="flex-1 px-6 py-4 rounded-l-full focus:outline-none text-lg"
+          className="w-full px-6 py-4 text-lg focus:outline-none"
           value={query}
           onChange={e => setQuery(e.target.value)}
         />
-        <button type="submit" className="bg-red-500 text-white px-8 py-4 rounded-r-full flex items-center gap-2 font-semibold text-lg cursor-pointer">
+        <button
+          type="submit"
+          className="w-full md:w-auto bg-red-500 text-white px-8 py-4 text-lg font-semibold flex items-center justify-center gap-2"
+        >
           OK <FaArrowRight />
         </button>
       </form>
+
+
       {/* Food Tags */}
       <div className="flex flex-wrap gap-2 mt-4">
         {foodTags.map(tag => (

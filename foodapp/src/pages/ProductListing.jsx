@@ -123,7 +123,7 @@ const ProductListing = () => {
               <div className="flex gap-2 w-full mt-auto">
                 <button
                   className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition cursor-pointer w-1/2 font-semibold"
-                  onClick={() => addToCart(r)}
+                  onClick={() => { addToCart(r); toast.success("Added to cart!"); }}
                 >
                   Add to Cart
                 </button>

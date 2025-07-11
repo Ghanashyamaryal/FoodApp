@@ -102,7 +102,7 @@ const FoodShowcase = () => {
                   <div className="flex gap-2 mt-auto">
                     <button
                       className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition cursor-pointer w-1/2 font-semibold"
-                      onClick={() => addToCart(dish)}
+                      onClick={() => { addToCart(dish); toast.success("Added to cart!"); }}
                     >
                       Add to Cart
                     </button>
@@ -131,7 +131,7 @@ const FoodShowcase = () => {
               <div className="flex gap-2 mt-2 w-full">
                 <button
                   className="bg-orange-500 text-white px-3 py-2 rounded hover:bg-orange-600 transition cursor-pointer w-1/2 font-semibold"
-                  onClick={() => addToCart(item)}
+                  onClick={() => { addToCart(item); toast.success("Added to cart!"); }}
                 >
                   Add to Cart
                 </button>

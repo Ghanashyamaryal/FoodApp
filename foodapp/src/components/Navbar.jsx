@@ -15,7 +15,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const { cart } = useContext(AppContext);
-  const cartCount = cart.length;
+  const cartCount = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
 
   return (
     <header className="w-full bg-[#fff4ee] shadow-sm">
