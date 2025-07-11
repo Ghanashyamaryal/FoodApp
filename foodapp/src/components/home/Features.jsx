@@ -42,39 +42,35 @@ const deals = [
 const Features = () => (
   <>
     {/* GET FOOD DELIVERED Section */}
-    <section className="bg-[#181b1b] py-12 text-white relative overflow-hidden w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] max-w-none">
-      <div className="max-w-[1360px] mx-auto">
-        <div className="text-center mb-10">
-          <span className="text-3xl font-bold">GET FOOD </span>
-          <span className="bg-orange-400 text-black px-4 py-1 rounded text-3xl font-bold align-middle">DELIVERED</span>
-        </div>
-        <div className="flex flex-wrap justify-center gap-0">
-          {features.map((f, i) => (
-            <div key={i} className="flex flex-col items-center w-56 border-r border-gray-700 last:border-none py-4">
-              {f.icon}
-              <span className="mt-4 text-lg text-center font-medium">{f.label}</span>
-            </div>
-          ))}
-        </div>
+    <section className="bg-[#181b1b] py-12 text-white relative overflow-hidden  w-full mx-auto">
+      <div className="text-center mb-10">
+        <span className="text-3xl font-bold">GET FOOD </span>
+        <span className="bg-orange-400 text-black px-4 py-1 rounded text-3xl font-bold align-middle">DELIVERED</span>
+      </div>
+      <div className="flex flex-wrap justify-center gap-12">
+        {features.map((f, i) => (
+          <div key={i} className="flex flex-col items-center w-56">
+            {f.icon}
+            <span className="mt-4 text-lg text-center font-medium">{f.label}</span>
+          </div>
+        ))}
       </div>
     </section>
     {/* GRAB FREE RESTAURANT DEALS Section */}
-    <section className="bg-[#232323] text-white relative overflow-hidden w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] max-w-none">
-      <div className="max-w-[1360px] mx-auto">
-        <div className="text-center mb-10">
-          <span className="text-3xl font-bold">GRAB FREE RESTAURANT </span>
-          <span className="bg-orange-400 text-black px-4 py-1 rounded text-3xl font-bold align-middle">DEALS</span>
-        </div>
-        <div className="flex flex-wrap justify-center gap-0">
-          {deals.map((d, i) => (
-            <div key={i} className="flex flex-col items-center w-56 border-r border-gray-700 last:border-none py-4">
-              <div className="bg-white rounded-full p-4 mb-4">
-                {d.icon}
-              </div>
-              <span className="mt-2 text-lg text-center font-medium text-white">{d.label}</span>
+    <section className="bg-[#232323] text-white relative overflow-hidden  w-full mx-auto">
+      <div className="text-center mb-10">
+        <span className="text-3xl font-bold">GRAB FREE RESTAURANT </span>
+        <span className="bg-orange-400 text-black px-4 py-1 rounded text-3xl font-bold align-middle">DEALS</span>
+      </div>
+      <div className="flex flex-wrap justify-center gap-12">
+        {deals.map((d, i) => (
+          <div key={i} className="flex flex-col items-center w-56">
+            <div className="bg-white rounded-full p-4 mb-4">
+              {d.icon}
             </div>
-          ))}
-        </div>
+            <span className="mt-2 text-lg text-center font-medium text-white">{d.label}</span>
+          </div>
+        ))}
       </div>
     </section>
   </>
