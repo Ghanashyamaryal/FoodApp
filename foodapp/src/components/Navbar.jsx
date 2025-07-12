@@ -21,7 +21,7 @@ const Navbar = () => {
     <header className="w-full bg-[#fff4ee] shadow-sm">
       <nav className="max-w-[1360px] mx-auto flex items-center justify-between px-4 py-3 w-full">
         {/* Brand */}
-        <div className="font-bold text-2xl text-gray-800">Foodle</div>
+        <div className="font-bold text-2xl text-gray-800"> FastApp</div>
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-8 items-center flex-1 justify-center w-full">
           {navLinks.map(link => (
